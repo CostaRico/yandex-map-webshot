@@ -18,7 +18,7 @@ let action = args.action
 
 // webshot("http://sophie.of.ru/api/presentations/data/pdf_map?id="+presID, "./maps/map"+presID+".png",
 
-webshot(`sophie.of.ru/api/presentations/data/${action}?id=${presID}`, `/Users/costa/Sophie/new-api/maps/map_for_pres${presID}.png`,
+webshot(`sophie.of.ru/api/presentations/data/${action}?id=${presID}`, `/home/sophie/web/s.of.ru/api/maps/map${presID}.png`// `/Users/costa/Sophie/new-api/maps/map_for_pres${presID}.png`,
 //webshot('file:///Users/costa/Sophie/get_ya/ex.html', 'google11.png',
 //webshot('http://ya.ru', 'google2.png',
 	{
@@ -27,7 +27,7 @@ webshot(`sophie.of.ru/api/presentations/data/${action}?id=${presID}`, `/Users/co
 		screenSize: {
     		// width: 1110,
     		// height: 803
-    		width: width, 
+    		width: width,
     		height: height
   		},
 	}, function(err) {
