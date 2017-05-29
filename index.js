@@ -5,7 +5,7 @@ var args = require('minimist')(process.argv.slice(2));
 let presID = args.presID;
 let width = args.width;
 let height = args.height;
-let action = args.action
+let action = args.action;
 //webshot(`http://localhost:3002/api/presentations/data/pdf_map?id=${presID}`, `/Users/costa/Sophie/new-api/preses/map_for_pres${presID}.png`,
 
 
@@ -18,7 +18,7 @@ let action = args.action
 
 // webshot("http://sophie.of.ru/api/presentations/data/pdf_map?id="+presID, "./maps/map"+presID+".png",
 
-webshot(`sophie.of.ru/api/presentations/data/${action}?id=${presID}`, `/home/sophie/web/s.of.ru/api/maps/map${presID}.png`// `/Users/costa/Sophie/new-api/maps/map_for_pres${presID}.png`,
+webshot(`sophie.of.ru/api/presentations/data/${action}?id=${presID}`, `/home/sophie/web/s.of.ru/api/maps/map${presID}.png`,
 //webshot('file:///Users/costa/Sophie/get_ya/ex.html', 'google11.png',
 //webshot('http://ya.ru', 'google2.png',
 	{
